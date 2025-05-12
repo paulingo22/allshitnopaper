@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>allshitnopaper</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    img {
+      max-width: 90%;
+      max-height: 90vh;
+      cursor: pointer;
+      transition: opacity 0.3s ease;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <img id="mainImage" src="4E4B0FAE-A093-49F7-A303-558C3B2FF4AE.JPG" alt="Kussbild">
+
+  <script>
+    const image = document.getElementById('mainImage');
+
+    image.addEventListener('click', () => {
+      image.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Pile_of_Poo_Emoji.png/240px-Pile_of_Poo_Emoji.png';
+      image.alt = 'Kothaufen';
+    });
+  </script>
+</body>
+</html>
